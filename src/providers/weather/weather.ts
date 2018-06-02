@@ -17,7 +17,16 @@ export class WeatherProvider {
 
     return new Observable( observer => {
       observer.next({
-        current_observation: 'nice!'
+        current_observation: {
+          display_location: {
+            full: `${city}, ${state}`
+          },
+          icon_url: 'http://openweathermap.org/img/w/02d.png',
+          weather: 'few clouds',
+          temp_f: 90.2,
+          temperature_string: '90.2 F (32.2 C)',
+          relative_humidity: '62%'
+        }
       });
       observer.complete();
     });
