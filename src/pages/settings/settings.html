@@ -12,7 +12,28 @@
 
 </ion-header>
 
-
 <ion-content padding>
-
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <form (ngSubmit)="saveForm()">
+            <ion-item>
+              <ion-label>
+                City
+              </ion-label>
+              <ion-input [(ngModel)]="city" name="city" type="input"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>
+                State
+              </ion-label>
+              <ion-input [(ngModel)]="state" name="state" type="input"></ion-input>
+            </ion-item>
+            <button ion-button type="submit" block>Save changes</button>
+          </form>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
