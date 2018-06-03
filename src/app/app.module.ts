@@ -1,7 +1,7 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { MyApp } from './app.component';
+import { WeatherApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
 import { HomePage } from '../pages/home/home';
@@ -16,7 +16,7 @@ import { IonicStorageModule } from '@ionic/storage'
 
 @NgModule({
   declarations: [
-    MyApp,
+    WeatherApp,
     AboutPage,
     HomePage,
     TabsPage,
@@ -25,12 +25,12 @@ import { IonicStorageModule } from '@ionic/storage'
   imports: [
     HttpClientModule,
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(WeatherApp),
     IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
+    WeatherApp,
     AboutPage,
     HomePage,
     TabsPage,
