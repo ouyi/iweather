@@ -21,7 +21,7 @@ export class WeatherProvider {
           display_location: {
             full: `${city}, ${state}`
           },
-          icon_url: 'http://openweathermap.org/img/w/02d.png',
+          icon_url: 'https://openweathermap.org/img/w/02d.png',
           weather: 'few clouds',
           temp_f: 90.2,
           temperature_string: '90.2 F (32.2 C)',
