@@ -9,4 +9,15 @@
 
     ionic cordova platform add browser
     ionic build --prod
-    platforms/browser/www/
+
+    cat .gitignore
+    node_modules/
+    .sourcemaps/
+    platforms/
+    plugins/
+    www/
+
+    cp -R www/* .
+    git add .
+    git commit -m "Add everything for hosting"
+    git push origin gh-pages
