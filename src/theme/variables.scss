@@ -37,13 +37,14 @@ $colors: (
   primary:    #02478C,
   secondary:  #0676AF,
   danger:     #DF2935,
-  light:      #FFFFFF,
+  light:      #30CDCF,
   dark:       #1C2A39,
   yankees-blue: #1C2A39,
   med-electric-blue: #02478C,
   honolulu-blue: #0676AF,
   max-blue-green: #30CDCF,
-  rose-madder: #DF2935
+  rose-madder: #DF2935,
+  white: #FFFFFF
 );
 
 
@@ -94,7 +95,7 @@ $colors: (
 
 $toolbar-md-background: color($colors, primary);
 $list-md-background-color: color($colors, secondary);
-$list-md-text-color: color($colors, light);
+$list-md-text-color: color($colors, white);
 $tabs-md-background: color($colors, primary);
-$tabs-md-tab-color-active: color($colors, light);
-$tabs-md-tab-color-inactive: color($colors, secondary);
+$tabs-md-tab-color-active: color($colors, white);
+$tabs-md-tab-color-inactive: color($colors, light);

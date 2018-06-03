@@ -25,7 +25,9 @@ export class WeatherProvider {
           weather: 'few clouds',
           temp_f: 90.2,
           temperature_string: '90.2 F (32.2 C)',
-          relative_humidity: '62%'
+          relative_humidity: '62%',
+          visibility: '10%',
+          wind_speed: 16.8
         }
       });
       observer.complete();

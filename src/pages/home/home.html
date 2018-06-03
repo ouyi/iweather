@@ -20,10 +20,16 @@
       <ion-col>
         <ion-list>
           <ion-item no-lines>
-            <strong>Temperature:</strong> {{ weather.temperature_string }}
+            <span class="ilabel"><strong>Temperature:</strong></span> {{ weather.temperature_string }}
           </ion-item>
           <ion-item no-lines>
-            <strong>Relative humidity:</strong> {{ weather.relative_humidity }}
+            <span class="ilabel"><strong>Relative humidity:</strong></span> {{ weather.relative_humidity }}
+          </ion-item>
+          <ion-item no-lines>
+            <span class="ilabel"><strong>Visibility:</strong></span> {{ weather.visibility }}
+          </ion-item>
+          <ion-item no-lines>
+            <span class="ilabel"><strong>Wind speed:</strong></span> {{ weather.wind_speed }}
           </ion-item>
         </ion-list>
       </ion-col>

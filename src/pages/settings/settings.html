@@ -19,14 +19,14 @@
         <ion-list>
           <form (ngSubmit)="saveForm()">
             <ion-item no-lines>
-              <ion-label color="light">
-                City:
+              <ion-label>
+                <span class="ilabel"><strong>City: </strong></span>
               </ion-label>
               <ion-input [(ngModel)]="city" name="city" type="input"></ion-input>
             </ion-item>
             <ion-item no-lines>
               <ion-label color="light">
-                State:
+                <span class="ilabel"><strong>State: </strong></span>
               </ion-label>
               <ion-input [(ngModel)]="state" name="state" type="input"></ion-input>
             </ion-item>
