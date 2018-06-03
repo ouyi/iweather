@@ -4,7 +4,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="home">
+<ion-content padding class="tab-content">
   <ion-grid *ngIf="weather">
     <ion-row>
       <ion-col width-50 offset-25>
@@ -13,16 +13,16 @@
           <img src="{{ weather.icon_url }}" alt="">
         </div>
         <h3 class="desc">{{ weather.weather }}</h3>
-        <h1 class="temp">{{ weather.temp_f }}&deg;</h1>
+        <h3 class="temp">{{ weather.temp_f }}&deg;</h3>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
         <ion-list>
-          <ion-item>
+          <ion-item no-lines>
             <strong>Temperature:</strong> {{ weather.temperature_string }}
           </ion-item>
-          <ion-item>
+          <ion-item no-lines>
             <strong>Relative humidity:</strong> {{ weather.relative_humidity }}
           </ion-item>
         </ion-list>

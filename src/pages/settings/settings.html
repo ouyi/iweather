@@ -12,21 +12,21 @@
 
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="tab-content">
   <ion-grid>
     <ion-row>
       <ion-col>
         <ion-list>
           <form (ngSubmit)="saveForm()">
-            <ion-item>
-              <ion-label>
-                City
+            <ion-item no-lines>
+              <ion-label color="light">
+                City:
               </ion-label>
               <ion-input [(ngModel)]="city" name="city" type="input"></ion-input>
             </ion-item>
-            <ion-item>
-              <ion-label>
-                State
+            <ion-item no-lines>
+              <ion-label color="light">
+                State:
               </ion-label>
               <ion-input [(ngModel)]="state" name="state" type="input"></ion-input>
             </ion-item>
