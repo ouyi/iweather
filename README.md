@@ -7,17 +7,8 @@
     tabs.ts
     tabs.html
 
+    rm src/pages/settings/settings.module.ts 
+    Remove `@IonicPage()` from src/pages/settings/settings.ts
+
     ionic cordova platform add browser
     ionic build --prod
-
-    cat .gitignore
-    node_modules/
-    .sourcemaps/
-    platforms/
-    plugins/
-    www/
-
-    cp -R www/* .
-    git add .
-    git commit -m "Add everything for hosting"
-    git push origin gh-pages
